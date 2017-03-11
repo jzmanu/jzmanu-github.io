@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>֪</title>
-  <subtitle>�ζ���·��������һ·ȥ...</subtitle>
+  <title>title</title>
+  <subtitle>aaaaaaaaaaaaaaaaaaaaaaa</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://jzman.duoshuo.com/"/>
   <updated>2017-03-08T16:45:00.480Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://jzman.duoshuo.com/</id>
   
   <author>
     <name>jzman</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>my new post</title>
-    <link href="http://yoursite.com/2017/03/09/my-new-post/"/>
-    <id>http://yoursite.com/2017/03/09/my-new-post/</id>
+    <link href="http://jzman.duoshuo.com/2017/03/09/my-new-post/"/>
+    <id>http://jzman.duoshuo.com/2017/03/09/my-new-post/</id>
     <published>2017-03-08T16:45:00.000Z</published>
     <updated>2017-03-08T16:45:00.480Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/03/08/hello-world/"/>
-    <id>http://yoursite.com/2017/03/08/hello-world/</id>
+    <link href="http://jzman.duoshuo.com/2017/03/08/hello-world/"/>
+    <id>http://jzman.duoshuo.com/2017/03/08/hello-world/</id>
     <published>2017-03-07T17:22:14.990Z</published>
     <updated>2017-03-07T17:22:14.991Z</updated>
     
