@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jzman.duoshuo.com/2017/03/08/hello-world/</loc>
+    
+    <lastmod>2017-03-12T06:35:57.630Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jzman.duoshuo.com/2017/03/09/my-new-post/</loc>
     
-    <lastmod>2017-03-12T06:28:45.771Z</lastmod>
+    <lastmod>2017-03-12T06:32:27.465Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://jzman.duoshuo.com/categories/index.html</loc>
     
     <lastmod>2017-03-12T02:25:56.381Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jzman.duoshuo.com/2017/03/08/hello-world/</loc>
-    
-    <lastmod>2017-03-07T17:22:14.991Z</lastmod>
     
   </url>
   
