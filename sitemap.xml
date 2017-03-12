@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jzman.duoshuo.com/2017/03/09/my-new-post/</loc>
+    <loc>http://jzman.duoshuo.com/tags/index.html</loc>
     
-    <lastmod>2017-03-08T16:45:00.480Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jzman.duoshuo.com/about/index.html</loc>
-    
-    <lastmod>2017-03-08T15:17:31.936Z</lastmod>
+    <lastmod>2017-03-12T02:27:34.910Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://jzman.duoshuo.com/categories/index.html</loc>
     
-    <lastmod>2017-03-08T15:10:17.807Z</lastmod>
+    <lastmod>2017-03-12T02:25:56.381Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jzman.duoshuo.com/tags/index.html</loc>
+    <loc>http://jzman.duoshuo.com/about/index.html</loc>
     
-    <lastmod>2017-03-08T15:08:15.385Z</lastmod>
+    <lastmod>2017-03-12T02:21:17.429Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jzman.duoshuo.com/2017/03/09/my-new-post/</loc>
+    
+    <lastmod>2017-03-08T16:45:00.480Z</lastmod>
     
   </url>
   
