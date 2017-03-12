@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jzman.duoshuo.com/"/>
-  <updated>2017-03-08T16:45:00.480Z</updated>
+  <updated>2017-03-12T06:28:45.771Z</updated>
   <id>http://jzman.duoshuo.com/</id>
   
   <author>
@@ -20,12 +20,24 @@
     <link href="http://jzman.duoshuo.com/2017/03/09/my-new-post/"/>
     <id>http://jzman.duoshuo.com/2017/03/09/my-new-post/</id>
     <published>2017-03-08T16:45:00.000Z</published>
-    <updated>2017-03-08T16:45:00.480Z</updated>
+    <updated>2017-03-12T06:28:45.771Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="测试博客"><a href="#测试博客" class="headerlink" title="测试博客"></a>测试博客</h3><p>下周也许是我们在这的最后一周…</p>
+]]></content>
     
     <summary type="html">
     
+      &lt;h3 id=&quot;测试博客&quot;&gt;&lt;a href=&quot;#测试博客&quot; class=&quot;headerlink&quot; title=&quot;测试博客&quot;&gt;&lt;/a&gt;测试博客&lt;/h3&gt;&lt;p&gt;下周也许是我们在这的最后一周…&lt;/p&gt;
+
+    
     </summary>
     
+    
+      <category term="npm" scheme="http://jzman.duoshuo.com/tags/npm/"/>
+    
+      <category term="github" scheme="http://jzman.duoshuo.com/tags/github/"/>
+    
+      <category term="android" scheme="http://jzman.duoshuo.com/tags/android/"/>
     
   </entry>
   
