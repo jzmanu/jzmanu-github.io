@@ -89,16 +89,25 @@
 
 
 
-<meta name="description" content="测试博客下周也许是我们在这的最后一周…">
+<meta name="description" content="测试博客下周也许是我们在这的最后一周…
+Touch事件传递的开始Activity中主要两个与事件传递相关的方法，dispatchTouchEvent()和onTouchEvent()，事件传递由Activity的dispatchTouchEvent()方法开始
+1.事件分发Activity中的事件分发方法：dispatchTounchEvent()，其源码如下：
+12345678910111213">
 <meta property="og:type" content="article">
 <meta property="og:title" content="my new post">
 <meta property="og:url" content="http://jzman.duoshuo.com/2017/03/09/my-new-post/index.html">
 <meta property="og:site_name" content="知">
-<meta property="og:description" content="测试博客下周也许是我们在这的最后一周…">
-<meta property="og:updated_time" content="2017-03-12T06:32:27.465Z">
+<meta property="og:description" content="测试博客下周也许是我们在这的最后一周…
+Touch事件传递的开始Activity中主要两个与事件传递相关的方法，dispatchTouchEvent()和onTouchEvent()，事件传递由Activity的dispatchTouchEvent()方法开始
+1.事件分发Activity中的事件分发方法：dispatchTounchEvent()，其源码如下：
+12345678910111213">
+<meta property="og:updated_time" content="2017-03-12T15:51:54.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="my new post">
-<meta name="twitter:description" content="测试博客下周也许是我们在这的最后一周…">
+<meta name="twitter:description" content="测试博客下周也许是我们在这的最后一周…
+Touch事件传递的开始Activity中主要两个与事件传递相关的方法，dispatchTouchEvent()和onTouchEvent()，事件传递由Activity的dispatchTouchEvent()方法开始
+1.事件分发Activity中的事件分发方法：dispatchTounchEvent()，其源码如下：
+12345678910111213">
 
 
 
@@ -244,161 +253,6 @@
       
 
       
-	  
-	  <li> <a title="放松一下..." href='javascript:(function() {
-    function c() {
-        var e = document.createElement("link");
-        e.setAttribute("type", "text/css");
-        e.setAttribute("rel", "stylesheet");
-        e.setAttribute("href", f);
-        e.setAttribute("class", l);
-        document.body.appendChild(e)
-    }
- 
-    function h() {
-        var e = document.getElementsByClassName(l);
-        for (var t = 0; t < e.length; t++) {
-            document.body.removeChild(e[t])
-        }
-    }
- 
-    function p() {
-        var e = document.createElement("div");
-        e.setAttribute("class", a);
-        document.body.appendChild(e);
-        setTimeout(function() {
-            document.body.removeChild(e)
-        }, 100)
-    }
- 
-    function d(e) {
-        return {
-            height : e.offsetHeight,
-            width : e.offsetWidth
-        }
-    }
- 
-    function v(i) {
-        var s = d(i);
-        return s.height > e && s.height < n && s.width > t && s.width < r
-    }
- 
-    function m(e) {
-        var t = e;
-        var n = 0;
-        while (!!t) {
-            n += t.offsetTop;
-            t = t.offsetParent
-        }
-        return n
-    }
- 
-    function g() {
-        var e = document.documentElement;
-        if (!!window.innerWidth) {
-            return window.innerHeight
-        } else if (e && !isNaN(e.clientHeight)) {
-            return e.clientHeight
-        }
-        return 0
-    }
- 
-    function y() {
-        if (window.pageYOffset) {
-            return window.pageYOffset
-        }
-        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
-    }
- 
-    function E(e) {
-        var t = m(e);
-        return t >= w && t <= b + w
-    }
- 
-    function S() {
-        var e = document.createElement("audio");
-        e.setAttribute("class", l);
-        e.src = i;
-        e.loop = false;
-        e.addEventListener("canplay", function() {
-            setTimeout(function() {
-                x(k)
-            }, 500);
-            setTimeout(function() {
-                N();
-                p();
-                for (var e = 0; e < O.length; e++) {
-                    T(O[e])
-                }
-            }, 15500)
-        }, true);
-        e.addEventListener("ended", function() {
-            N();
-            h()
-        }, true);
-        e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
-        document.body.appendChild(e);
-        e.play()
-    }
- 
-    function x(e) {
-        e.className += " " + s + " " + o
-    }
- 
-    function T(e) {
-        e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
-    }
- 
-    function N() {
-        var e = document.getElementsByClassName(s);
-        var t = new RegExp("\\b" + s + "\\b");
-        for (var n = 0; n < e.length; ) {
-            e[n].className = e[n].className.replace(t, "")
-        }
-    }
- 
-    var e = 30;
-    var t = 30;
-    var n = 350;
-    var r = 350;
-    var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
-    var s = "mw-harlem_shake_me";
-    var o = "im_first";
-    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
-    var a = "mw-strobe_light";
-    var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
-    var l = "mw_added_css";
-    var b = g();
-    var w = y();
-    var C = document.getElementsByTagName("*");
-    var k = null;
-    for (var L = 0; L < C.length; L++) {
-        var A = C[L];
-        if (v(A)) {
-            if (E(A)) {
-                k = A;
-                break
-            }
-        }
-    }
-    if (A === null) {
-        console.warn("Could not find a node of the right size. Please try a different page.");
-        return
-    }
-    c();
-    S();
-    var O = [];
-    for (var L = 0; L < C.length; L++) {
-        var A = C[L];
-        if (v(A)) {
-            O.push(A)
-        }
-    }
-})()    '>High一下</a> </li>
-	  
-	  
-	  
-	  
     </ul>
   
 
@@ -531,6 +385,21 @@
 
       
         <h3 id="测试博客"><a href="#测试博客" class="headerlink" title="测试博客"></a>测试博客</h3><p>下周也许是我们在这的最后一周…</p>
+<h3 id="Touch事件传递的开始"><a href="#Touch事件传递的开始" class="headerlink" title="Touch事件传递的开始"></a>Touch事件传递的开始</h3><p>Activity中主要两个与事件传递相关的方法，dispatchTouchEvent()和onTouchEvent()，事件传递由Activity的dispatchTouchEvent()方法开始</p>
+<h4 id="1-事件分发"><a href="#1-事件分发" class="headerlink" title="1.事件分发"></a>1.事件分发</h4><p>Activity中的事件分发方法：dispatchTounchEvent()，其源码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//事件分发</div><div class="line">public boolean dispatchTouchEvent(MotionEvent ev) &#123;</div><div class="line">    if (ev.getAction() == MotionEvent.ACTION_DOWN) &#123;</div><div class="line">        //空方法</div><div class="line">        onUserInteraction();</div><div class="line">    &#125;</div><div class="line">    if (getWindow().superDispatchTouchEvent(ev)) &#123;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line">    //onTouchEvent()方法默认返回false</div><div class="line">    return onTouchEvent(ev);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面代码中调用了Window类的superDispatchTouchEvent(ev)方法，这是一个抽象方法，那么当调用这个方法的时候，就会去调用具体子类中的方法，Window类的具体子类就是PhoneWindow类，里面的具体实现的superDispatchTouchEvent(ev)方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//Window类里面的抽象方法</div><div class="line">public abstract boolean superDispatchTouchEvent(MotionEvent event);</div><div class="line">//Windoe子类PhoneWindow类中superDispatchTouchEvent()方法的具体实现</div><div class="line">@Override  </div><div class="line">public boolean superDispatchTouchEvent(MotionEvent event) &#123;  </div><div class="line">    return mDecor.superDispatchTouchEvent(event);  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>显然，这里有调用了mDecor.superDispatchTouchEvent(event)，mDecor是一个PhoneWindow.DecorView对象，这也是窗口的顶层视图。它是一个真正Activity的root view,它继承了FrameLayout,通过super.dispatchTouchEvent，会把touchevent派发给各个activity的子view，也就是我们在Activity.onCreat方法中setContentView时设置的view,代码参考如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//DecorView类声明</div><div class="line">private final class DecorView extends FrameLayout implements RootViewSurfaceTaker &#123;</div><div class="line">    ...</div><div class="line">    public boolean superDispatchTouchEvent(MotionEvent event) &#123;</div><div class="line">        //这里又调用了FrameLayout中的dispatchTouchEvent方法</div><div class="line">        return super.dispatchTouchEvent(event);</div><div class="line">    &#125;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>由于在FrameLayout并没有重写dispatchTouchEvent(event)方法，因此我们需要FrameLayout的父类也就是ViewGroup中该方法的实现，由该方法进行事件的具体分发，这里具体事件分发过程有待研究。</p>
+<h4 id="2-事件处理"><a href="#2-事件处理" class="headerlink" title="2.事件处理"></a>2.事件处理</h4><p>Activity中的事件处理方法：onTouchEvent()，其源码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//事件处理,默认返回false</div><div class="line">public boolean onTouchEvent(MotionEvent event) &#123;</div><div class="line">        if (mWindow.shouldCloseOnTouch(this, event)) &#123;</div><div class="line">            finish();</div><div class="line">            return true;</div><div class="line">        &#125;</div><div class="line">        //默认返回false</div><div class="line">        return false;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>由于对于onTouchEvent()方法来说，事件传递是向父控件传递的，即使返回false,事件也相当于被消费了。</p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><ul>
+<li>Activity中拥有与事件相关的两个方法dispatchTouchEvent()和onTouchEvent()。</li>
+<li>Activity进行事件分发时，只有return super.dispatchTouchEvent(ev)时，事件才继续向下传递，返回true或false都事件就被消费了，也就是终止了事件的传播。<h3 id="ViewGroup"><a href="#ViewGroup" class="headerlink" title="ViewGroup"></a>ViewGroup</h3>ViewGroup中主要三个与事件传递相关的方法：dispatchTouchEvent()、onInterceptTouchEvent()和onTouchEvent()。<h4 id="1-事件分发-1"><a href="#1-事件分发-1" class="headerlink" title="1.事件分发"></a>1.事件分发</h4>ViewGroup中的事件分发方法：dispatchTouchEvent()，其源码如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">@Override</div><div class="line">public boolean dispatchTouchEvent(MotionEvent ev) &#123;</div><div class="line">    ...</div><div class="line">    boolean handled = false;</div><div class="line"></div><div class="line">    //给方法决定是否拦截事件的分发</div><div class="line">    onInterceptTouchEvent(ev);</div><div class="line">    ...</div><div class="line">    //该方法将事件传递给子View</div><div class="line">    dispatchTransformedTouchEvent(ev, false, child, idBitsToAssign)) &#123;</div><div class="line">    ...                </div><div class="line">    return handled;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这个方法的作用就是遍历ViewGroup中的子View,将事件(ACTION_DOWN)交有子View进行处理，里面主要调用了onInterceptTouchEvent()和dispatchTransformedTouchEvent()方法。</p>
 
       
     </div>
@@ -710,6 +579,159 @@
               <i class="fa fa-rss"></i>
               RSS
             </a>
+			
+			<a title="�ղص���ǩ��ż��Highһ��^_^" rel="alternate" class="mw-harlem_shake_slow wobble shake" href='javascript:(function() {
+    function c() {
+        var e = document.createElement("link");
+        e.setAttribute("type", "text/css");
+        e.setAttribute("rel", "stylesheet");
+        e.setAttribute("href", f);
+        e.setAttribute("class", l);
+        document.body.appendChild(e)
+    }
+ 
+    function h() {
+        var e = document.getElementsByClassName(l);
+        for (var t = 0; t < e.length; t++) {
+            document.body.removeChild(e[t])
+        }
+    }
+ 
+    function p() {
+        var e = document.createElement("div");
+        e.setAttribute("class", a);
+        document.body.appendChild(e);
+        setTimeout(function() {
+            document.body.removeChild(e)
+        }, 100)
+    }
+ 
+    function d(e) {
+        return {
+            height : e.offsetHeight,
+            width : e.offsetWidth
+        }
+    }
+ 
+    function v(i) {
+        var s = d(i);
+        return s.height > e && s.height < n && s.width > t && s.width < r
+    }
+ 
+    function m(e) {
+        var t = e;
+        var n = 0;
+        while (!!t) {
+            n += t.offsetTop;
+            t = t.offsetParent
+        }
+        return n
+    }
+ 
+    function g() {
+        var e = document.documentElement;
+        if (!!window.innerWidth) {
+            return window.innerHeight
+        } else if (e && !isNaN(e.clientHeight)) {
+            return e.clientHeight
+        }
+        return 0
+    }
+ 
+    function y() {
+        if (window.pageYOffset) {
+            return window.pageYOffset
+        }
+        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+    }
+ 
+    function E(e) {
+        var t = m(e);
+        return t >= w && t <= b + w
+    }
+ 
+    function S() {
+        var e = document.createElement("audio");
+        e.setAttribute("class", l);
+        e.src = i;
+        e.loop = false;
+        e.addEventListener("canplay", function() {
+            setTimeout(function() {
+                x(k)
+            }, 500);
+            setTimeout(function() {
+                N();
+                p();
+                for (var e = 0; e < O.length; e++) {
+                    T(O[e])
+                }
+            }, 15500)
+        }, true);
+        e.addEventListener("ended", function() {
+            N();
+            h()
+        }, true);
+        e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+        document.body.appendChild(e);
+        e.play()
+    }
+ 
+    function x(e) {
+        e.className += " " + s + " " + o
+    }
+ 
+    function T(e) {
+        e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+    }
+ 
+    function N() {
+        var e = document.getElementsByClassName(s);
+        var t = new RegExp("\\b" + s + "\\b");
+        for (var n = 0; n < e.length; ) {
+            e[n].className = e[n].className.replace(t, "")
+        }
+    }
+ 
+    var e = 30;
+    var t = 30;
+    var n = 350;
+    var r = 350;
+    var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+    var s = "mw-harlem_shake_me";
+    var o = "im_first";
+    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+    var a = "mw-strobe_light";
+    var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+    var l = "mw_added_css";
+    var b = g();
+    var w = y();
+    var C = document.getElementsByTagName("*");
+    var k = null;
+    for (var L = 0; L < C.length; L++) {
+        var A = C[L];
+        if (v(A)) {
+            if (E(A)) {
+                k = A;
+                break
+            }
+        }
+    }
+    if (A === null) {
+        console.warn("Could not find a node of the right size. Please try a different page.");
+        return
+    }
+    c();
+    S();
+    var O = [];
+    for (var L = 0; L < C.length; L++) {
+        var A = C[L];
+        if (v(A)) {
+            O.push(A)
+        }
+    }
+})()'><i class="fa fa-music"></i> High</a>
+
+			
           </div>
         
 
@@ -749,7 +771,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#测试博客"><span class="nav-number">1.</span> <span class="nav-text">测试博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#测试博客"><span class="nav-number">1.</span> <span class="nav-text">测试博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Touch事件传递的开始"><span class="nav-number">2.</span> <span class="nav-text">Touch事件传递的开始</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-事件分发"><span class="nav-number">2.1.</span> <span class="nav-text">1.事件分发</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-事件处理"><span class="nav-number">2.2.</span> <span class="nav-text">2.事件处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结："><span class="nav-number">2.3.</span> <span class="nav-text">总结：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ViewGroup"><span class="nav-number">3.</span> <span class="nav-text">ViewGroup</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-事件分发-1"><span class="nav-number">3.1.</span> <span class="nav-text">1.事件分发</span></a></li></ol></li></ol></div>
             
 
           </div>
