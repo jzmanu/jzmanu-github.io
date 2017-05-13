@@ -121,7 +121,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
     motion: true,
     duoshuo: {
       userId: 'undefined',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -207,7 +207,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Startseite
           </a>
         </li>
       
@@ -217,7 +217,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Kategorien
           </a>
         </li>
       
@@ -227,7 +227,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            Über
           </a>
         </li>
       
@@ -237,7 +237,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archiv
           </a>
         </li>
       
@@ -247,7 +247,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -260,7 +260,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Suche
           </a>
         </li>
       
@@ -280,7 +280,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
     </span>
     <div class="local-search-input-wrapper">
       <input autocapitalize="off" autocomplete="off" autocorrect="off"
-             placeholder="搜索..." spellcheck="false"
+             placeholder="Searching..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -348,9 +348,9 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-09T00:45:00+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-09T00:45:00+08:00">
                 2017-03-09
               </time>
             
@@ -369,7 +369,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">in</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -391,11 +391,6 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
           
           
 
-          
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-            </span>
           
 
           
@@ -551,10 +546,10 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
+            Übersicht
           </li>
         </ul>
       
@@ -575,7 +570,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -586,7 +581,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">Kategorien</span>
               </a>
             </div>
           
@@ -597,7 +592,7 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-name">Tags</span>
               </a>
             </div>
           
@@ -834,14 +829,18 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
 
 
 <div class="powered-by">
-    火星
+  Erstellt mit  
 </div>
 
 <div class="theme-info">
-  访问量 -
+  Theme -
+  
+  <span id="busuanzi_container_site_uv">
+  本站来过<span id="busuanzi_value_site_uv"></span>个小伙伴
+</span>
 
   <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+    总访问量<span id="busuanzi_value_site_pv"></span>次
 </span>
  
 </div>
@@ -851,22 +850,6 @@ Touch事件传递的开始Activity中主要两个与事件传递相关的方法�
 
 
         
-
-<div class="busuanzi-count">
-
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
-  
-
-  
-    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-  
-  
-</div>
-
-
 
         
       </div>
