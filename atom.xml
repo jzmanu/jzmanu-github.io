@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jzman.duoshuo.com/"/>
-  <updated>2017-05-13T19:01:39.397Z</updated>
+  <updated>2017-05-13T19:29:14.843Z</updated>
   <id>http://jzman.duoshuo.com/</id>
   
   <author>
@@ -16,17 +16,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>RecyclerView的简单使用</title>
-    <link href="http://jzman.duoshuo.com/2017/05/14/RecyclerView%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
-    <id>http://jzman.duoshuo.com/2017/05/14/RecyclerView的简单使用/</id>
-    <published>2017-05-13T19:01:38.919Z</published>
-    <updated>2017-05-13T19:01:39.397Z</updated>
+    <title></title>
+    <link href="http://jzman.duoshuo.com/2017/05/14/RecyclerRiew%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+    <id>http://jzman.duoshuo.com/2017/05/14/RecyclerRiew的简单使用/</id>
+    <published>2017-05-13T19:32:37.106Z</published>
+    <updated>2017-05-13T19:29:14.843Z</updated>
     
-    <content type="html"><![CDATA[<p>自从Android 5.0之后，google退出了一个RecyclerView控件，他是support-v7包中的新组件，是一个强大的滑动组件，与经典的ListView相比，同样拥有item回收复用的功能，RecyclerView相当于是ListView的升级版，相较ListView其优点如下：</p>
-<ul>
-<li>RecyclerView封装了ViewHolder的回收复用，也就是说RecyclerView标准化了ViewHolder,编写Adapter面向的是ViewHolder而不是View了，复用的逻辑被封装了，写起来更加简单。</li>
-<li>提供一种插拔式的体验，高度的解耦，异常的灵活，针对一个Item的显示RecyclerView专门抽取了相应的类，来控制Item的显示，使其的扩展性特别强。</li>
-</ul>
+    <content type="html"><![CDATA[<p>自从Android 5.0之后，google退出了一个RecyclerView控件，他是support-v7包中的新组件，是一个强大的滑动组件，与经典的ListView相比，同样拥有item回收复用的功能，RecyclerView相当于是ListView的升级版。</p>
+<p>RecyclerView封装了ViewHolder的回收复用，也就是说RecyclerView标准化了ViewHolder,编写Adapter面向的是ViewHolder而不是View了，复用的逻辑被封装了，写起来更加简单。</p>
+<p>RecyclerView提供一种插拔式的体验，高度的解耦，异常的灵活，针对一个Item的显示RecyclerView专门抽取了相应的类，来控制Item的显示，使其的扩展性特别强。</p>
 <h4 id="引入RecyclerVIew"><a href="#引入RecyclerVIew" class="headerlink" title="引入RecyclerVIew"></a>引入RecyclerVIew</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compile <span class="string">'com.android.support:recyclerview-v7:25.1.0'</span></div></pre></td></tr></table></figure>
 <h4 id="创建布局文件"><a href="#创建布局文件" class="headerlink" title="创建布局文件"></a>创建布局文件</h4><h5 id="主布局文件"><a href="#主布局文件" class="headerlink" title="主布局文件"></a>主布局文件</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">/*activity_main.xml*/</div><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">    <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></div><div class="line">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></div><div class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">tools:context</span>=<span class="string">"com.manu.mrecyclerview.MainActivity"</span>&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">android.support.v7.widget.RecyclerView</span></span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/rv"</span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</div><div class="line">    <span class="tag">&lt;/<span class="name">android.support.v7.widget.RecyclerView</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div></pre></td></tr></table></figure>
 <h5 id="Item布局文件"><a href="#Item布局文件" class="headerlink" title="Item布局文件"></a>Item布局文件</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">/*item.xml*/</div><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">LinearLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:padding</span>=<span class="string">"5dp"</span>&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">TextView</span></span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/tv_recycle"</span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:gravity</span>=<span class="string">"center_horizontal"</span></div><div class="line">        <span class="attr">android:text</span>=<span class="string">"data"</span></div><div class="line">        <span class="attr">android:background</span>=<span class="string">"#cac3c3"</span></div><div class="line">        <span class="attr">android:padding</span>=<span class="string">"10dp"</span></div><div class="line">        <span class="attr">android:textSize</span>=<span class="string">"20sp"</span>/&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -56,16 +54,11 @@
     
     <summary type="html">
     
-      &lt;p&gt;自从Android 5.0之后，google退出了一个RecyclerView控件，他是support-v7包中的新组件，是一个强大的滑动组件，与经典的ListView相比，同样拥有item回收复用的功能，RecyclerView相当于是ListView的升级版，相较Lis
+      &lt;p&gt;自从Android 5.0之后，google退出了一个RecyclerView控件，他是support-v7包中的新组件，是一个强大的滑动组件，与经典的ListView相比，同样拥有item回收复用的功能，RecyclerView相当于是ListView的升级版。&lt;/p&gt;
+
     
     </summary>
     
-      <category term="Android" scheme="http://jzman.duoshuo.com/categories/Android/"/>
-    
-    
-      <category term="RecyclerView" scheme="http://jzman.duoshuo.com/tags/RecyclerView/"/>
-    
-      <category term="Android" scheme="http://jzman.duoshuo.com/tags/Android/"/>
     
   </entry>
   
