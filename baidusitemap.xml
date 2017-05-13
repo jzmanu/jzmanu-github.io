@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://jzman.duoshuo.com/2017/03/09/my-new-post/</loc>
+    <lastmod>2017-03-12T15:51:54.296Z</lastmod>
+    <data>
+        <display>
+        <title>my new post</title>
+        <pubTime>2017-03-08T16:45:00.000Z</pubTime>
+        
+        <tag>npm</tag>
+         
+        <tag>github</tag>
+         
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://jzman.duoshuo.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jzman.duoshuo.com/2017/03/08/hello-world/</loc>
+    <lastmod>2017-03-12T06:35:57.630Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-03-07T17:22:14.990Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+</urlset>
