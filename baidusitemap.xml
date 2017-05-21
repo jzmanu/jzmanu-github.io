@@ -4,8 +4,8 @@
 
     
   <url>
-    <loc>http://jzman.duoshuo.com/2017/05/17/%E5%A6%82%E4%BD%95%E4%B8%BARecyclerView%E6%B7%BB%E5%8A%A0%E5%8D%95%E5%87%BB%E4%BA%8B%E4%BB%B6%EF%BC%9F/</loc>
-    <lastmod>2017-05-16T18:02:41.493Z</lastmod>
+    <loc>http://jzman.duoshuo.com/2017/05/17/RecyclerView%E7%9A%84Item%E7%9A%84%E5%8D%95%E5%87%BB%E4%BA%8B%E4%BB%B6/</loc>
+    <lastmod>2017-05-21T17:57:43.808Z</lastmod>
     <data>
         <display>
         <title>如何为RecyclerView添加单击事件？</title>
@@ -18,7 +18,31 @@
          
            
              
-              <breadCrumb title="RecyclerView" url="http://jzman.duoshuo.com/categories/RecyclerView/"/>
+              <breadCrumb title="Android" url="http://jzman.duoshuo.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jzman.duoshuo.com/2017/05/22/RecyclerView%E5%AE%9E%E7%8E%B0%E6%8B%96%E5%8A%A8%E6%8E%92%E5%BA%8F%E5%92%8C%E6%BB%91%E5%8A%A8%E5%88%A0%E9%99%A4%E5%8A%9F%E8%83%BD/</loc>
+    <lastmod>2017-05-21T17:57:07.649Z</lastmod>
+    <data>
+        <display>
+        <title>RecyclerView实现拖动排序和滑动删除功能</title>
+        <pubTime>2017-05-21T17:54:43.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>RecyclerView</tag>
+         
+        <tag>ItemTouchHelper</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://jzman.duoshuo.com/categories/Android/"/>
           
         </display>
     </data>
