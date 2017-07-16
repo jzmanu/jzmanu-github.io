@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>http://jzman.duoshuo.com/2017/07/16/Android-%E5%BC%80%E5%8F%91%E4%B8%AD%E8%AE%B0%E4%BD%8F%E5%AF%86%E7%A0%81%E7%9A%84%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0/</loc>
+    <lastmod>2017-07-16T09:25:01.305Z</lastmod>
+    <data>
+        <display>
+        <title>Android 开发中记住密码的一种实现</title>
+        <pubTime>2017-07-16T09:22:57.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>密码</tag>
+         
+        <tag>CheckBox</tag>
+         
+        <tag>SharedPreferences</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://jzman.duoshuo.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://jzman.duoshuo.com/2017/05/14/RecyclerRiew%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2017-06-04T13:07:30.644Z</lastmod>
     <data>
@@ -92,7 +119,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://jzman.duoshuo.com/2017/03/08/hello-world/</loc>
